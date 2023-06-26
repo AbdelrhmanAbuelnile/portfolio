@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .primaryColor {
+       @apply bg-gradient-to-b from-[#003c97] to-slate-900 ;
+    }
+    .secondaryColor {
+       @apply bg-gradient-to-r from-fuchsia-600 to-cyan-600 ;
+    }
+    .thirdColor {
+       @apply bg-gradient-to-r from-[#bc25ca] to-[#1d20bd] ;
+    }
+    .btn {
+        @apply bg-gradient-to-r from-fuchsia-500 to-cyan-500 font-bold text-2xl text-white px-3 py-2 rounded-md hover:scale-105 duration-300;
+    }
+    .textColor{
+        @apply bg-gradient-to-r from-[#fa7066] to-[#c62368] bg-clip-text text-transparent ;
+        
+        
+    }
+}
