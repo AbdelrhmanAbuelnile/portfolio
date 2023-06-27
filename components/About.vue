@@ -1,12 +1,17 @@
 <template>
-      <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full px-4 mb-10 md:py-24 lg:px-10">
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full px-4 mb-10 md:py-24 lg:px-16">
 
-            <div class="flex flex-col justify-center items-start w-11/12 mb-6">
+            <div class="flex flex-col justify-center items-start w-11/12 mb-6 ">
 
               <div class="text-slate-300 flex flex-col justify-start items-start">
                   <h1 class="text-2xl font-medium mb-2 md:text-2xl lg:text-3xl">Hi there</h1>
-                  <p class="text-2xl font-semibold mb-2 md:text-2xl lg:text-3xl">My name is <span class="danceB">Abdelrahman</span></p>
-                  <p class="text-4xl md:text-4xl lg:text-5xl font-bold textColor dance mb-4">Front-End & Mobile developer</p>
+                  <p class="text-2xl font-semibold mb-2 md:text-2xl lg:text-4xl">My name is <span class="danceB text-3xl md:text-4xl lg:text-5xl">Abdelrahman</span></p>
+                  <v-typical
+                    class="blink text-3xl md:text-4xl lg:text-6xl font-bold textColor dance mb-4"
+                    :steps="[' Freelancer', 2000, ' Front-End developer', 2000, ' Mobile developer', 2000]"
+                    :loop="Infinity"
+                    :wrapper="'h2'"
+                  ></v-typical>
 
                   <div class="flex flex-row justify-between items-center w-44">
                       <a href="https://www.linkedin.com/in/abdelrahman-hany-abu-elnile" target='_blank'>
@@ -39,7 +44,14 @@
     
 </template>
 
-<script setup>
+<script >
+import VTypical from 'vue-typical';
+
+export default {
+  components: {
+    VTypical,
+  },
+};
 
 </script>
 
@@ -91,5 +103,13 @@
 	100%{
 		background-position: 0 100%;
 	}
+}
+.blink::after {
+  content: "|";
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 </style>

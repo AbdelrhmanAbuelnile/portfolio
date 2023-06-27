@@ -9,7 +9,7 @@
             <div
                 v-for="icon in toolsIcon"
                 :key="icon.name"
-                class="thirdColor rounded-lg flex p-2 md:p-4 justify-center items-center shadow-lg m-2 md:m-4">
+                class="thirdColor rounded-lg flex p-2 md:p-4 justify-center items-center shadow-lg m-2 md:m-4  manga-r">
                 <Icon :name="icon.name" class="w-16 h-16" />
             </div>
     
@@ -19,7 +19,8 @@
 </template>
 
 <script setup>
-    const toolsIcon = [
+import { onMounted } from 'vue'
+const toolsIcon = [
         {
             name: 'logos:html-5',
         },
@@ -54,6 +55,35 @@
             name: 'logos:github-icon',
         },
     ]
+onMounted(() => {
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show')
+        } else {
+          entry.target.classList.remove('show')
+        }
+      })
+    })
+
+    const hiddenElementsRight = document.querySelectorAll('.manga-r')
+    hiddenElementsRight.forEach((el) => observer.observe(el))
+
+    const hiddenElementsleft = document.querySelectorAll('.manga-l')
+    hiddenElementsleft.forEach((el) => observer.observe(el))
+
+    const hiddenElementsUp = document.querySelectorAll('.manga-p')
+    hiddenElementsUp.forEach((el) => observer.observe(el))
+
+    const hiddenElementsDown = document.querySelectorAll('.manga-d')
+    hiddenElementsDown.forEach((el) => observer.observe(el))
+
+  } else {
+    console.log('IntersectionObserver not supported')
+  }
+})
+
 </script>
 
 <style scoped>
@@ -101,4 +131,48 @@
 	}
 }
 
+.manga-r {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(-100%);
+    filter: blur(2px);
+}
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+.manga-r:first-child{
+    transition-delay: 100ms;
+}
+.manga-r:nth-child(2){
+    transition-delay: 200ms;
+}
+.manga-r:nth-child(3){
+    transition-delay: 300ms;
+}
+.manga-r:nth-child(4){
+    transition-delay: 400ms;
+}
+.manga-r:nth-child(5){
+    transition-delay: 500ms;
+}
+.manga-r:nth-child(6){
+    transition-delay: 600ms;
+}
+.manga-r:nth-child(7){
+    transition-delay: 700ms;
+}
+.manga-r:nth-child(8){
+    transition-delay: 800ms;
+}
+.manga-r:nth-child(9){
+    transition-delay: 900ms;
+}
+.manga-r:nth-child(10){
+    transition-delay: 1000ms;
+}
+.manga-r:nth-last-child(1){
+    transition-delay: 1.1s;
+}
 </style>
