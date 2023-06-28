@@ -4,7 +4,7 @@
 
 @layer components {
     .primaryColor {
-       @apply bg-gradient-to-b from-[#003c97] to-slate-900 ;
+       @apply bg-gradient-to-b from-[#001220] to-slate-900 ;
     }
     .secondaryColor {
        @apply bg-gradient-to-r from-fuchsia-600 to-cyan-600 ;

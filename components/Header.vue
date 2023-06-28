@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full flex flex-row justify-between items-center mb-16 py-6 shadow-sm px-4 lg:px-8">
+    <header class="w-full flex flex-row justify-between items-center bg-slate-900 py-6 shadow-sm px-4 lg:px-8 fixed z-20 scroll-smooth">
 
         <div class=" text-white font-bold text-2xl lg:text-4xl ">
             <a href="#">Abdelrahman</a>
@@ -8,7 +8,7 @@
         <div class="lg:block max-md:hidden flex md:flex-row md:justify-between md:items-center font-semibold capitalize text-gray-200 text-2xl ">
             <NuxtLink to="/" class="mr-4 hover:text-gray-600 duration-150">home</NuxtLink>
             <NuxtLink to="/projects" class="mr-4 hover:text-gray-600 duration-150">projects</NuxtLink>
-            <NuxtLink to="/uses" class="mr-4 hover:text-gray-600 duration-150">uses</NuxtLink>
+            <!-- <NuxtLink to="/uses" class="mr-4 hover:text-gray-600 duration-150">uses</NuxtLink> -->
         </div>
 
         <div class="links md:hidden capitalize text-gray-400 text-2xl px-2">
@@ -20,7 +20,7 @@
             <ul>
                 <li><NuxtLink to="/" class="">home</NuxtLink></li>
                 <li><NuxtLink to="/projects" class="">projects</NuxtLink></li>
-                <li><NuxtLink to="/uses" class="">uses</NuxtLink></li>
+                <!-- <li><NuxtLink to="/uses" class="">uses</NuxtLink></li> -->
             </ul>
         </div>
 
@@ -34,6 +34,7 @@
 <style scoped>
     .links {
         position: relative;
+        z-index: 999;
     }
     
     header #menu span:nth-child(2){
@@ -76,7 +77,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        background-color: #2f3a4c;
+        background-color: #0f172a;
         position: absolute;
         right: 0;
         min-width: 200px;
@@ -108,9 +109,9 @@
     .links ul li:not(:last-child) a {
         border-bottom: 1px solid #ccc;
     }
-    header {
+    /* header {
         background-image: url('../assets/icons/waves.svg');
         background-repeat: no-repeat;
         background-size: cover;
-    }
+    } */
 </style>

@@ -1,9 +1,7 @@
 <template>
-    <div class="primaryColor h-screen">
+    <div class=" h-screen overflow-x-hidden">
         <Header />
-        <div>
-            projects
-        </div>
+        <projects />
         <Footer />
     </div>
 </template>
