@@ -1,9 +1,8 @@
 <template>
-  <NuxtLoadingIndicator />
     <div class=" h-screen overflow-x-hidden">
-      <Header />
-      <projects />
-      <Footer />
+        <Header />
+        <projects />
+        <Footer />
     </div>
 </template>
 
