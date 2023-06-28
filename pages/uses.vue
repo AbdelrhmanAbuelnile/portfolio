@@ -30,7 +30,7 @@ useHead({
     {
       rel: 'icon',
       type: 'image/ico',
-      href: '../public/favicon.ico'
+      href: '/favicon.ico'
     }
   ]
 })

@@ -2,7 +2,7 @@
     <header class="w-full flex flex-row justify-between items-center bg-slate-900 py-6 shadow-sm px-4 lg:px-8 fixed z-20 scroll-smooth">
 
         <div class=" text-white font-bold text-2xl lg:text-4xl ">
-            <a href="#">Abdelrahman</a>
+            <NuxtLink to="/">Abdelrahman</NuxtLink>
         </div>
 
         <div class="lg:block max-md:hidden flex md:flex-row md:justify-between md:items-center font-semibold capitalize text-gray-200 text-2xl ">

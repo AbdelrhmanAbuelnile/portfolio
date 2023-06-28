@@ -1,4 +1,5 @@
 <template>
+  <NuxtLoadingIndicator />
     <div class="primaryColor w-full h-full scroll-smooth overflow-hidden">
         <Header />
         <div class="flex flex-col justify-center items-center w-full">

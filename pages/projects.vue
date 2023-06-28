@@ -1,24 +1,26 @@
 <template>
+  <NuxtLoadingIndicator />
     <div class=" h-screen overflow-x-hidden">
-        <Header />
-        <projects />
-        <Footer />
+      <Header />
+      <projects />
+      <Footer />
     </div>
 </template>
 
 <script setup>
 useSeoMeta({
   title: 'Projects',
-  description: '[description]',
-  ogTitle: '[og:title]',
-  ogDescription: '[og:description]',
+  description: 'Explore the impressive projects by Abdelrahman Hany, showcasing expertise in front-end and mobile development.',
+  ogTitle: 'Abdelrahman Hany - Projects',
+  ogDescription: 'Explore the impressive projects by Abdelrahman Hany, showcasing expertise in front-end and mobile development.',
   ogImage: '[og:image]',
   ogUrl: '[og:url]',
-  twitterTitle: '[twitter:title]',
-  twitterDescription: '[twitter:description]',
+  twitterTitle: 'Abdelrahman Hany - Projects',
+  twitterDescription: 'Explore the impressive projects by Abdelrahman Hany, showcasing expertise in front-end and mobile development.',
   twitterImage: '[twitter:image]',
   twitterCard: 'summary'
 })
+
 
 useHead({
   htmlAttrs: {
@@ -28,7 +30,7 @@ useHead({
     {
       rel: 'icon',
       type: 'image/ico',
-      href: '../public/favicon.ico'
+      href: '/favicon.ico'
     }
   ]
 })

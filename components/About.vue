@@ -1,5 +1,5 @@
 <template>
-      <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full  mt-16 px-4 mb-10 md:py-24 lg:px-16">
+      <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center w-full  mt-24 px-4 mb-10 md:py-24 lg:px-16">
 
             <div class="flex flex-col justify-center items-start w-11/12 mb-6 ">
 
