@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-center items-center">
 
-    <div class="flex flex-row justify-between items-center w-44">
+    <div class="flex flex-row justify-start gap-5 w-full items-center">
       <a
         href="https://www.linkedin.com/in/abdelrahman-hany-abu-elnile"
         target="_blank"
@@ -14,7 +14,7 @@
       <a href="https://github.com/AbdelrhmanAbuelnile" target="_blank">
         <Icon
           name="uil:github"
-          class="w-10 h-10 text-slate-400 mx-4 hover:text-[#333]"
+          class="w-10 h-10 text-slate-400 hover:text-[#333]"
         />
       </a>
       <a
@@ -23,7 +23,7 @@
       >
         <Icon
           name="logos:upwork"
-          class="w-20 h-20 text-slate-400 hover:text-[#6fda44]"
+          class="w-20 h-10 text-slate-400 hover:text-[#6fda44]"
         />
       </a>
     </div>

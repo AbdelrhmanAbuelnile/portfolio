@@ -3,6 +3,30 @@
         
         <div class="flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-slate-950 hover:scale-105 p-2 w-10/12 md:w-3/12 bg-slate-700 duration-150">
             <div class="w-full h-2/4 overflow-hidden">
+                <a href="https://tadhkirah.vercel.app/" target="_blank">
+                    <img src="../assets//icons/tadhkirah.png" alt="project1" class="w-full h-full hover:rotate-6 hover:scale-110 duration-300 rounded-lg">
+                </a>
+            </div>
+            <div class="flex flex-col justify-start items-center gap-4 w-full">
+                <h1 class="text-2xl text-slate-400 font-bold">Tadhkirah</h1>
+                <p class="text-lg text-slate-400 font-semibold">Tools</p>
+                <div class="flex flex-row gap-4 justify-between items-center">
+                    <Icon name="logos:nuxt-icon" class="w-8 h-8" />
+                    <Icon name="logos:vue" class="w-8 h-8" />
+                    <Icon name="logos:tailwindcss-icon" class="w-8 h-8" />
+                </div>
+                <div class="flex flex-row justify-center items-center w-1/4">
+                    <a href="https://github.com/AbdelrhmanAbuelnile/Tadhkirah-full" target="_blank" class=" rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
+                        <Icon name="logos:github-icon" class="w-5 h-5" />
+                    </a>
+                    <a href="https://tadhkirah.vercel.app/" target="_blank" class="ml-4 rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
+                        <Icon name="ph:globe-simple-duotone" class="w-5 h-5" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-slate-950 hover:scale-105 p-2 w-10/12 md:w-3/12 bg-slate-700 duration-150">
+            <div class="w-full h-2/4 overflow-hidden">
                 <a href="https://vue-weather-taupe.vercel.app" target="_blank">
                     <img src="../assets//icons/weather.png" alt="project1" class="w-full h-full hover:rotate-6 hover:scale-110 duration-300 rounded-lg">
                 </a>
