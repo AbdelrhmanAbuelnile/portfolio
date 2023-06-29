@@ -12,8 +12,10 @@
                     :loop="Infinity"
                     :wrapper="'h2'"
                   ></v-typical>
+                  <ClientOnly>
+                    <SocialLinks />
 
-                <SocialLinks />
+                  </ClientOnly>
               </div>
 
             
