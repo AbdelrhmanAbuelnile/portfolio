@@ -40,7 +40,7 @@ const toolsIcon = [
 
 <style scoped>
     footer {
-        background-image: url('../assets/icons/footer.svg');
+        background-image: url('/imgs/footer.svg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;

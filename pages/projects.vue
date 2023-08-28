@@ -37,7 +37,7 @@ useHead({
 
 <style scoped>
 .bgPoly {
-    background: url('../assets/icons/circle.svg');
+    background: url('/imgs/circle.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
