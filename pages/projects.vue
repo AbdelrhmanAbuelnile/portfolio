@@ -1,7 +1,7 @@
 <template>
-    <div class=" h-screen overflow-x-hidden">
+    <div class=" h-fit overflow-x-hidden bgPoly">
         <Header />
-        <projects />
+        <Projects />
         <Footer />
     </div>
 </template>
@@ -35,6 +35,12 @@ useHead({
 })
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.bgPoly {
+    background: url('../assets/icons/circle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
 </style>

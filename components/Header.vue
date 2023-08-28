@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full flex flex-row justify-between items-center bg-slate-800 py-6 px-4 lg:px-8 fixed z-20 scroll-smooth">
+    <header class="w-full flex flex-row justify-between items-center bg-slate-800 py-4 px-4 lg:px-8 fixed z-20 scroll-smooth">
 
         <div class=" text-white font-bold text-2xl lg:text-4xl ">
             <NuxtLink to="/">Abdelrahman</NuxtLink>
@@ -10,13 +10,11 @@
             <NuxtLink to="/projects" class="mr-4 hover:text-gray-600 duration-150">projects</NuxtLink>
         </div>
 
-        <div class="links md:hidden capitalize text-gray-400 text-2xl px-2">
-            <span id="menu" class=" w-6 cursor-pointer">
-                <span class="bg-white mb-2"></span>
-                <span class="bg-white mb-2"></span>
-                <span class="bg-white"></span>
-            </span>
-            <ul>
+        <div class="links md:hidden capitalize text-white text-2xl px-2">
+            <button @click="show = !show">
+                <Icon name="ic:sharp-menu" class="text-2xl"/>
+            </button>
+            <ul v-if="show">
                 <li><NuxtLink to="/" class="">home</NuxtLink></li>
                 <li><NuxtLink to="/projects" class="">projects</NuxtLink></li>
             </ul>
@@ -26,7 +24,9 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 
+const show = ref(false)
 </script>
 
 <style scoped>
@@ -34,53 +34,16 @@
         position: relative;
         z-index: 999;
     }
-    
-    header #menu span:nth-child(2){
-        width: 100%;
-    }
-    
-    header #menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    
-    header #menu span {
-        background-color: #fff;
-        height: 2px;
-    }
-    
-    header #menu span:first-child{
-        width: 50%;
-        transition: 0.3s;
-    }
-    
-    header #menu span:nth-child(2){
-        width: 100%;
-    }
-    
-    header #menu span:last-child{
-        width: 50%;
-        transition: 0.3s;
-    }
-    
-    header #menu:hover span:first-child{
-        width: 100%;
-    }
-    
-    header #menu:hover span:last-child{
-        width: 100%;
-    }
+
     .links ul {
         list-style: none;
         margin: 0;
         padding: 0;
-        background-color: #0f172a;
+        background-color: #1d2a49;
         position: absolute;
         right: 0;
         min-width: 200px;
         top: calc(100% + 15px);
-        display: none;
         z-index: 1;
     }
     .links ul::before {
@@ -89,27 +52,15 @@
         border-style: solid;
         border-color: transparent transparent #3f4b5d transparent;
         position: absolute;
-        right: 5px;
+        right: 10px;
         top: -20px;
     } 
-    .links:hover ul{
-        display: block;
-    }
     .links ul li a {
         display: block;
         text-decoration: none;
         padding: 15px;
-        transition: 0.3s;
-    }
-    .links ul li a:hover{
-        padding-left: 25px;
     }
     .links ul li:not(:last-child) a {
         border-bottom: 1px solid #ccc;
     }
-    /* header {
-        background-image: url('../assets/icons/waves.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    } */
 </style>

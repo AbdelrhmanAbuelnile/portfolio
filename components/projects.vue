@@ -1,138 +1,58 @@
 <template>
-    <div class="bgPoly  h-fit p-4 flex flex-row justify-center items-center flex-wrap py-5 mt-20 gap-4">
-        
-        <div class="flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-slate-950 hover:scale-105 p-2 w-10/12 md:w-3/12 bg-slate-700 duration-150">
-            <div class="w-full h-2/4 overflow-hidden">
-                <a href="https://tadhkirah.vercel.app/" target="_blank">
-                    <img src="../assets//icons/tadhkirah.png" alt="project1" class="w-full h-full hover:rotate-6 hover:scale-110 duration-300 rounded-lg">
-                </a>
-            </div>
-            <div class="flex flex-col justify-start items-center gap-4 w-full">
-                <h1 class="text-2xl text-slate-400 font-bold">Tadhkirah</h1>
-                <p class="text-lg text-slate-400 font-semibold">Tools</p>
-                <div class="flex flex-row gap-4 justify-between items-center">
-                    <Icon name="logos:nuxt-icon" class="w-8 h-8" />
-                    <Icon name="logos:vue" class="w-8 h-8" />
-                    <Icon name="logos:tailwindcss-icon" class="w-8 h-8" />
-                </div>
-                <div class="flex flex-row justify-center items-center w-1/4">
-                    <a href="https://github.com/AbdelrhmanAbuelnile/Tadhkirah-full" target="_blank" class=" rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="logos:github-icon" class="w-5 h-5" />
-                    </a>
-                    <a href="https://tadhkirah.vercel.app/" target="_blank" class="ml-4 rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="ph:globe-simple-duotone" class="w-5 h-5" />
-                    </a>
-                </div>
-            </div>
+    <div class="h-fit px-4 flex flex-row justify-center items-center flex-wrap py-5 mt-28 mb-20 gap-4">
+        <div 
+            class="w-10/12 md:w-4/12 lg:w-3/12"
+            v-for="(data) in projectsData" :key="data.projectTitle">
+            <Project :data="data" />
         </div>
-        <div class="flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-slate-950 hover:scale-105 p-2 w-10/12 md:w-3/12 bg-slate-700 duration-150">
-            <div class="w-full h-2/4 overflow-hidden">
-                <a href="https://vue-weather-taupe.vercel.app" target="_blank">
-                    <img src="../assets//icons/weather.png" alt="project1" class="w-full h-full hover:rotate-6 hover:scale-110 duration-300 rounded-lg">
-                </a>
-            </div>
-            <div class="flex flex-col justify-start items-center gap-4 w-full">
-                <h1 class="text-2xl text-slate-400 font-bold">Weather app</h1>
-                <p class="text-lg text-slate-400 font-semibold">Tools</p>
-                <div class="flex flex-row gap-4 justify-between items-center">
-                    <Icon name="logos:vue" class="w-8 h-8" />
-                    <Icon name="logos:tailwindcss-icon" class="w-8 h-8" />
-                </div>
-                <div class="flex flex-row justify-center items-center w-1/4">
-                    <a href="https://github.com/AbdelrhmanAbuelnile/VueWeather" target="_blank" class=" rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="logos:github-icon" class="w-5 h-5" />
-                    </a>
-                    <a href="https://vue-weather-taupe.vercel.app" target="_blank" class="ml-4 rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="ph:globe-simple-duotone" class="w-5 h-5" />
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-slate-950 hover:scale-105 p-2 w-10/12 md:w-3/12 bg-slate-700 duration-150">
-            <div class="w-full h-2/4 overflow-hidden">
-                <a href="https://sourdough-figma.vercel.app/" target="_blank">
-                    <img src="../assets//icons/sourdouh.png" alt="project1" class="w-full h-full hover:rotate-6 hover:scale-110 duration-300 rounded-lg">
-                </a>
-            </div>
-            <div class="flex flex-col justify-start items-center gap-4 w-full">
-                <h1 class="text-2xl text-slate-400 font-bold">Sourdough</h1>
-                <p class="text-lg text-slate-400 font-semibold">Tools</p>
-                <div class="flex flex-row gap-4 justify-between items-center">
-                    <Icon name="logos:nuxt-icon" class="w-8 h-8" />
-                    <Icon name="logos:vue" class="w-8 h-8" />
-                    <Icon name="logos:tailwindcss-icon" class="w-8 h-8" />
-                </div>
-                <div class="flex flex-row justify-center items-center w-1/4">
-                    <a href="https://github.com/AbdelrhmanAbuelnile/Sourdough-Figma" target="_blank" class=" rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="logos:github-icon" class="w-5 h-5" />
-                    </a>
-                    <a href="https://sourdough-figma.vercel.app/" target="_blank" class="ml-4 rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="ph:globe-simple-duotone" class="w-5 h-5" />
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-slate-950 hover:scale-105 p-2 w-10/12 md:w-3/12 bg-slate-700 duration-150">
-            <div class="w-full h-2/4 overflow-hidden">
-                <a href="https://tic-tac-toe-psi-nine.vercel.app/" target="_blank">
-                    <img src="../assets//icons/XO.jpeg" alt="project1" class="w-full h-full hover:rotate-6 hover:scale-110 duration-300 rounded-lg">
-                </a>
-            </div>
-            <div class="flex flex-col justify-start items-center gap-4 w-full">
-                <h1 class="text-2xl text-slate-400 font-bold">X O</h1>
-                <p class="text-lg text-slate-400 font-semibold">Tools</p>
-                <div class="flex flex-row gap-4 justify-between items-center">
-                    <Icon name="logos:vue" class="w-8 h-8" />
-                    <Icon name="logos:tailwindcss-icon" class="w-8 h-8" />
-                </div>
-                <div class="flex flex-row justify-center items-center w-1/4">
-                    <a href="https://github.com/AbdelrhmanAbuelnile/Tic-Tac-Toe" target="_blank" class=" rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="logos:github-icon" class="w-5 h-5" />
-                    </a>
-                    <a href="https://tic-tac-toe-psi-nine.vercel.app/" target="_blank" class="ml-4 rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="ph:globe-simple-duotone" class="w-5 h-5" />
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col justify-center items-center gap-2 rounded-lg shadow-lg shadow-slate-950 hover:scale-105 p-2 w-10/12 md:w-3/12 bg-slate-700 duration-150">
-            <div class="w-full h-2/4 overflow-hidden">
-                <a href="https://rock-paper-scissors-nine-sandy.vercel.app/" target="_blank">
-                    <img src="../assets//icons/RBS.jpeg" alt="project1" class="w-full h-full hover:rotate-6 hover:scale-110 duration-300 rounded-lg">
-                </a>
-            </div>
-            <div class="flex flex-col justify-start items-center gap-4 w-full">
-                <h1 class="text-2xl text-slate-400 font-bold">Rock, Paper, Scissors</h1>
-                <p class="text-lg text-slate-400 font-semibold">Tools</p>
-                <div class="flex flex-row gap-4 justify-between items-center">
-                    <Icon name="logos:vue" class="w-8 h-8" />
-                    <Icon name="logos:tailwindcss-icon" class="w-8 h-8" />
-                </div>
-                <div class="flex flex-row justify-center items-center w-1/4">
-                    <a href="https://github.com/AbdelrhmanAbuelnile/Rock-Paper-Scissors" target="_blank" class=" rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="logos:github-icon" class="w-5 h-5" />
-                    </a>
-                    <a href="https://rock-paper-scissors-nine-sandy.vercel.app/" target="_blank" class="ml-4 rounded-full bg-green-400 p-2 flex items-center justify-center hover:bg-green-600 duration-100">
-                        <Icon name="ph:globe-simple-duotone" class="w-5 h-5" />
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
     </div>
 </template>
 
 <script setup>
-
+ const projectsData = [
+    {
+        projectTitle:'Tadhkirah',
+        projectLink: 'https://tadhkirah.vercel.app/',
+        projectImg: '../assets/icons/tadhkirah.png',
+        projectDesc: 'Tadhkirah project is an Islamic project that allow you to read Quran, Hadith, tafser and azkar',
+        projectTools: ['logos:nuxt-icon', 'logos:vue', 'logos:tailwindcss-icon'],
+        projectCode: 'https://github.com/AbdelrhmanAbuelnile/Tadhkirah-full'
+    },
+    {
+        projectTitle:'Weather app',
+        projectLink: 'https://vue-weather-taupe.vercel.app',
+        projectImg: '../assets/icons/weather.png',
+        projectDesc: 'Weather project is app that allows you to know the weather in any city you like and save your fav to look at them without searching for them',
+        projectTools: [ 'logos:vue', 'logos:tailwindcss-icon'],
+        projectCode: 'https://github.com/AbdelrhmanAbuelnile/VueWeather'
+    },
+    {
+        projectTitle:'Sourdough',
+        projectLink: 'https://sourdough-figma.vercel.app/',
+        projectImg: '../assets/icons/sourdouh.png',
+        projectDesc: 'Sourdough is a landing page demo for any company in your mind or for even just a service',
+        projectTools: ['logos:nuxt-icon', 'logos:vue', 'logos:tailwindcss-icon'],
+        projectCode: 'https://github.com/AbdelrhmanAbuelnile/Sourdough-Figma'
+    },
+    {
+        projectTitle:'X O',
+        projectLink: 'https://tic-tac-toe-psi-nine.vercel.app/',
+        projectImg: '../assets/icons/XO.jpeg',
+        projectDesc: "X | O project is from it's name is Tic Tac Toe game that you can play with your friends offline",
+        projectTools: ['logos:vue', 'logos:tailwindcss-icon'],
+        projectCode: 'https://github.com/AbdelrhmanAbuelnile/Tic-Tac-Toe'
+    },
+    {
+        projectTitle:'Rock, Paper, Scissors',
+        projectLink: 'https://rock-paper-scissors-nine-sandy.vercel.app/',
+        projectImg: '../assets/icons/RBS.jpeg',
+        projectDesc: "it's simply a Rock paper scissors game vs the computer",
+        projectTools: ['logos:vue', 'logos:tailwindcss-icon'],
+        projectCode: 'https://github.com/AbdelrhmanAbuelnile/Rock-Paper-Scissors'
+    },
+ ]
 </script>
 
 <style scoped>
-.bgPoly {
-    background: url('../assets/icons/circle.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-}
+
 </style>
