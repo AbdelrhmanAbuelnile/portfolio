@@ -31,6 +31,9 @@ const toolsIcon = [
             name: 'logos:javascript',
         },
         {
+            name: 'logos:react',
+        },
+        {
             name: 'logos:vue',
         },
         {
