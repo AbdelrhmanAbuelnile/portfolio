@@ -97,4 +97,20 @@ onMounted(() => {
     filter: blur(0px);
     transform: translateX(0);
 }
+
+.manga-r:first-child{
+    transition-delay: 100ms;
+}
+.manga-r:nth-child(2){
+    transition-delay: 150ms;
+}
+.manga-r:nth-child(3){
+    transition-delay: 200ms;
+}
+.manga-r:nth-child(4){
+    transition-delay: 250ms;
+}
+.manga-r:nth-child(5){
+    transition-delay: 300ms;
+}
 </style>

@@ -22,16 +22,16 @@
 import { onMounted } from 'vue'
 const toolsIcon = [
         {
-            name: 'logos:html-5',
-        },
-        {
-            name: 'logos:css-3',
-        },
-        {
             name: 'logos:javascript',
         },
         {
+            name: 'logos:typescript-icon',
+        },
+        {
             name: 'logos:react',
+        },
+        {
+            name: 'logos:nextjs-icon',
         },
         {
             name: 'logos:vue',
@@ -43,10 +43,25 @@ const toolsIcon = [
             name: 'logos:tailwindcss-icon',
         },
         {
-            name: 'logos:flutter',
+            name: 'logos:nodejs-icon-alt',
         },
         {
-            name: 'logos:dart',
+            name: 'logos:express',
+        },
+        {
+            name: 'logos:mongodb-icon',
+        },
+        {
+            name: 'logos:strapi-icon',
+        },
+        {
+            name: 'logos:stripe',
+        },
+        {
+            name: 'logos:postman-icon',
+        },
+        {
+            name: 'logos:vercel-icon',
         },
         {
             name: 'logos:figma',
@@ -72,15 +87,6 @@ onMounted(() => {
 
     const hiddenElementsRight = document.querySelectorAll('.manga-r')
     hiddenElementsRight.forEach((el) => observer.observe(el))
-
-    const hiddenElementsleft = document.querySelectorAll('.manga-l')
-    hiddenElementsleft.forEach((el) => observer.observe(el))
-
-    const hiddenElementsUp = document.querySelectorAll('.manga-p')
-    hiddenElementsUp.forEach((el) => observer.observe(el))
-
-    const hiddenElementsDown = document.querySelectorAll('.manga-d')
-    hiddenElementsDown.forEach((el) => observer.observe(el))
 
   } else {
     console.log('IntersectionObserver not supported')
@@ -149,33 +155,51 @@ onMounted(() => {
     transition-delay: 100ms;
 }
 .manga-r:nth-child(2){
-    transition-delay: 200ms;
+    transition-delay: 150ms;
 }
 .manga-r:nth-child(3){
-    transition-delay: 300ms;
+    transition-delay: 200ms;
 }
 .manga-r:nth-child(4){
-    transition-delay: 400ms;
+    transition-delay: 250ms;
 }
 .manga-r:nth-child(5){
-    transition-delay: 500ms;
+    transition-delay: 300ms;
 }
 .manga-r:nth-child(6){
-    transition-delay: 600ms;
+    transition-delay: 350ms;
 }
 .manga-r:nth-child(7){
-    transition-delay: 700ms;
+    transition-delay: 400ms;
 }
 .manga-r:nth-child(8){
-    transition-delay: 800ms;
+    transition-delay: 450ms;
 }
 .manga-r:nth-child(9){
-    transition-delay: 900ms;
+    transition-delay: 500ms;
 }
 .manga-r:nth-child(10){
-    transition-delay: 1000ms;
+    transition-delay: 550ms;
+}
+.manga-r:nth-child(11){
+    transition-delay: 600ms;
+}
+.manga-r:nth-child(12){
+    transition-delay: 650ms;
+}
+.manga-r:nth-child(13){
+    transition-delay: 700ms;
+}
+.manga-r:nth-child(14){
+    transition-delay: 750ms;
+}
+.manga-r:nth-child(15){
+    transition-delay: 800ms;
+}
+.manga-r:nth-child(16){
+    transition-delay: 850ms;
 }
 .manga-r:nth-last-child(1){
-    transition-delay: 1.1s;
+    transition-delay: 900ms;
 }
 </style>
