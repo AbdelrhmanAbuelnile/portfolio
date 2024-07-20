@@ -24,6 +24,9 @@ module.exports = {
       },
       flex: {
         '2': '2 2 0%'
+      },
+      fontFamily:{
+        'major':["Major Mono Display", 'monospace']
       }
       // backgroundImage: {
       //   'header-waves': 'url("../assets/imgs/header-waves.svg")',

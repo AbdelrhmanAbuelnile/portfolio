@@ -19,36 +19,42 @@
         projectCode: 'https://github.com/AbdelrhmanAbuelnile/Tadhkirah-full'
     },
     {
-        projectTitle:'Weather app',
-        projectLink: 'https://vue-weather-taupe.vercel.app',
-        projectImg: "/imgs/weather.png",
-        projectDesc: 'Weather project is app that allows you to know the weather in any city you like and save your fav to look at them without searching for them',
-        projectTools: [ 'logos:vue', 'logos:tailwindcss-icon'],
-        projectCode: 'https://github.com/AbdelrhmanAbuelnile/VueWeather'
-    },
-    {
-        projectTitle:'Sourdough',
-        projectLink: 'https://sourdough-figma.vercel.app/',
-        projectImg: "/imgs/sourdouh.png",
-        projectDesc: 'Sourdough is a landing page demo for any company in your mind or for even just a service',
-        projectTools: ['logos:nuxt-icon', 'logos:vue', 'logos:tailwindcss-icon'],
-        projectCode: 'https://github.com/AbdelrhmanAbuelnile/Sourdough-Figma'
-    },
-    {
-        projectTitle:'X O',
-        projectLink: 'https://tic-tac-toe-psi-nine.vercel.app/',
-        projectImg: "/imgs/XO.jpeg",
-        projectDesc: "X | O project is from it's name is Tic Tac Toe game that you can play with your friends offline",
-        projectTools: ['logos:vue', 'logos:tailwindcss-icon'],
-        projectCode: 'https://github.com/AbdelrhmanAbuelnile/Tic-Tac-Toe'
-    },
-    {
-        projectTitle:'Rock, Paper, Scissors',
-        projectLink: 'https://rock-paper-scissors-nine-sandy.vercel.app/',
-        projectImg: "/imgs/RBS.jpeg",
+        projectTitle:'Google Meeting Clone',
+        projectLink: 'https://google-meet-clone-phi.vercel.app/',
+        projectImg: "/imgs/meeting.png",
         projectDesc: "it's simply a Rock paper scissors game vs the computer",
-        projectTools: ['logos:vue', 'logos:tailwindcss-icon'],
-        projectCode: 'https://github.com/AbdelrhmanAbuelnile/Rock-Paper-Scissors'
+        projectTools: ['logos:nextjs', 'logos:react', 'logos:typescript-icon', 'logos:tailwindcss-icon'],
+        projectCode: 'https://github.com/AbdelrhmanAbuelnile/google-meet-clone'
+    },
+    {
+        projectTitle:'Elmazr3a Elsa3eda',
+        projectLink: 'https://mazr3a-front.vercel.app/',
+        projectImg: "/imgs/elmazr3a.png",
+        projectDesc: "it's simply a Rock paper scissors game vs the computer",
+        projectTools: ['logos:react', 'logos:tailwindcss-icon', 'logos:nodejs-icon-alt', 'logos:mongodb-icon', 'logos:postman-icon'],
+        projectCode: 'https://github.com/Elmazr3a-elsa3eda/frontend'
+    },
+    {
+        projectTitle:'Gamers Launge',
+        projectLink: 'https://gamers-lounge.vercel.app/',
+        projectImg: "/imgs/gamers.png",
+        projectDesc: "it's simply a Rock paper scissors game vs the computer",
+        projectTools: ['logos:nextjs', 'logos:react', 'logos:stripe', 'logos:strapi-icon', 'logos:tailwindcss-icon'],
+        projectCode: 'https://github.com/AbdelrhmanAbuelnile/gamers-lounge'
+    },
+    {
+        projectTitle:'Spec Novo',
+        projectLink: 'https://specnovo-six.vercel.app/',
+        projectImg: "/imgs/specnovo.png",
+        projectDesc: 'Weather project is app that allows you to know the weather in any city you like and save your fav to look at them without searching for them',
+        projectTools: [ 'logos:react', 'logos:tailwindcss-icon'],
+    },
+    {
+        projectTitle:'AppStart',
+        projectLink: 'https://appstart.vercel.app/',
+        projectImg: "/imgs/Appstart.png",
+        projectDesc: "X | O project is from it's name is Tic Tac Toe game that you can play with your friends offline",
+        projectTools: ['logos:react', 'logos:tailwindcss-icon'],
     },
  ]
 </script>
