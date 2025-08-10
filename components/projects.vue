@@ -40,7 +40,6 @@ const projectsData = [
 			"logos:nodejs-icon-alt",
 			"logos:mongodb-icon",
 		],
-		projectCode: "https://github.com/AbdelrhmanAbuelnile/Tadhkirah-full",
 	},
 	{
 		projectTitle: "Top Skore (coming soon)",
